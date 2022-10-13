@@ -1,0 +1,111 @@
+$corDefundobody: #FCE6A8;
+$corDefrentebody: #8fbcb3;
+$cordoquadro: #DFE6ED;
+$cordoresultado: #C3CFD9;
+$cordobotao: #788895;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $corDefundobody;
+    height: 100vh;
+    padding: 9px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+        "cabecalho"
+        "principal";
+    gap: 9px;
+
+}
+
+.cabecalho {
+    background-color: $corDefrentebody;
+    padding: 15px;
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+}
+
+.principal {
+    background-color: $corDefrentebody;
+    grid-area: principal;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 32%;
+}
+
+.card-exercicio {
+    background-color: $cordoquadro;
+    padding: 20px;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+}
+
+.card-exercicio__entrada {
+    width: 0px;
+    flex-basis: 0px;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-exercicio__entrada input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.card-exercicio__entrada button {
+    background-color: $cordobotao;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.card-exercicio__saida {
+    background-color: $cordoresultado;
+    border: solid $cordobotao 2px;
+    width: 0px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.saida__label {
+    font-size: 20px;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.saida__resultado {
+    font: bold;
+    font-size: 50px;
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
