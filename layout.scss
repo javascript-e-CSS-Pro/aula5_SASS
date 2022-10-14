@@ -52,45 +52,47 @@ body {
     flex-grow: 1;
     width: 100%;
     display: flex;
+
+        &__entrada {
+            width: 0px;
+            flex-basis: 0px;
+            flex-grow: 1;
+            padding: 20px;
+            gap: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        &__saida {
+            background-color: $cordoresultado;
+            border: solid $cordobotao 2px;
+            width: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__entrada>input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        &__entrada button {
+            background-color: $cordobotao;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
 }
 
-.card-exercicio__entrada {
-    width: 0px;
-    flex-basis: 0px;
-    flex-grow: 1;
-    padding: 20px;
-    gap: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
-.card-exercicio__entrada input {
-    width: 100%;
-    padding: 5px;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.card-exercicio__entrada button {
-    background-color: $cordobotao;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-}
-
-.card-exercicio__saida {
-    background-color: $cordoresultado;
-    border: solid $cordobotao 2px;
-    width: 0px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
 
 .saida__label {
     font-size: 20px;
@@ -107,5 +109,5 @@ body {
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }

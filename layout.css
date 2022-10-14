@@ -44,7 +44,6 @@ body {
   width: 100%;
   display: flex;
 }
-
 .card-exercicio__entrada {
   width: 0px;
   flex-basis: 0px;
@@ -55,14 +54,20 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
-.card-exercicio__entrada input {
+.card-exercicio__saida {
+  background-color: #C3CFD9;
+  border: solid #788895 2px;
+  width: 0px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-exercicio__entrada > input {
   width: 100%;
   padding: 5px;
   border-radius: 3px;
   text-align: center;
 }
-
 .card-exercicio__entrada button {
   background-color: #788895;
   width: 100%;
@@ -72,15 +77,6 @@ body {
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-}
-
-.card-exercicio__saida {
-  background-color: #C3CFD9;
-  border: solid #788895 2px;
-  width: 0px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .saida__label {
